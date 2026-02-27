@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 01</title>
+</head>
+
+<body>
+    <h1>Cadastro funcionário</h1>
+    <form action="teste.jsp" method="post">
+        <label for="cod_Func">Código Funcionário:</label>
+        <input type="number" name="cod_Func" id="codFunc"><br>
+        <label for="nome"> Nome do Funcionário:</label>
+        <input type="text" name="nome" id="nome"> <br>
+        <label for="salario">Salario:</label>
+        <input type="number" name="salario" id="salario"><br><br>
+
+        <h1>Escolha Função:</h1>
+        <input type="radio" id="sec" name="funcao">
+        <label for="sec">Secretario(a)</label><br>
+        <input type="radio" id="mot" name="funcao">
+        <label for="mot">Motorista</label><br>
+        <input type="radio" id="rad" name="funcao">
+        <label for="rad">Radialista</label><br><br>
+
+        <h1>Tipos de Projetos Envolvido dentro da Empresa </h1>
+        <input type="checkbox" id="proj1" name="proj1">
+        <label for="proj1">Projeto "Aprender"</label><br>
+        <input type="checkbox" id="proj2" name="proj2">
+        <label for="proj2">Projeto "Vida em Sociedade</label><br>
+        <input type="checkbox" id="proj3" name="proj3">
+        <label for="proj3"> Projeto "Cantare"</label><br><br>
+        <input type="color"><br>
+        <input type="date"><br>
+        <input type="datetime-local"><br>
+        <input type="email"><br>
+        <input type="file"><br><br>
+        <!--<input type="hidden" name="teste" value="teste" value="<?php echo"> !-->
+        <input type="image"><br><br>
+        <input type="month"><br>
+        <input type="range"><br>
+
+
+        <input type="submit" value="Salvar">
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>
