@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário ENEM</title>
+</head>
+
+<body>
+    <h1>Formulário ENEM</h1>
+
+    <form action="teste.jsp" method="post">
+        <fieldset>
+            <legend>Informações Pessoais:</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required><br><br>
+
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required><br><br>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" placeholder="XXX.XXX.XXX-XX" required><br><br>
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Questões</legend>
+            <p><strong> Matemática (5 questões)</strong></p>
+
+            <p>Questão1</p>
+            <label><input type="radio" name="matematica1" value="a">(a)</label><br>
+            <label><input type="radio" name="matematica1" value="b">(b)</label><br>
+            <label><input type="radio" name="matematica1" value="c">(c)</label><br>
+            <label><input type="radio" name="matematica1" value="d">(d)</label><br>
+
+            <p>Questão2</p>
+            <label><input type="radio" name="matematica2" value="a">(a)</label><br>
+            <label><input type="radio" name="matematica2" value="b">(b)</label><br>
+            <label><input type="radio" name="matematica2" value="c">(c)</label><br>
+            <label><input type="radio" name="matematica2" value="d">(d)</label><br>
+
+            <p>Questão3</p>
+            <label><input type="radio" name="matematica3" value="a">(a)</label><br>
+            <label><input type="radio" name="matematica3" value="b">(b)</label><br>
+            <label><input type="radio" name="matematica3" value="c">(c)</label><br>
+            <label><input type="radio" name="matematica3" value="d">(d)</label><br>
+
+            <p>Questão4</p>
+            <label><input type="radio" name="matematica4" value="a">(a)</label><br>
+            <label><input type="radio" name="matematica4" value="b">(b)</label><br>
+            <label><input type="radio" name="matematica4" value="c">(c)</label><br>
+            <label><input type="radio" name="matematica4" value="d">(d)</label><br>
+
+            <p>Questão5</p>
+            <label><input type="radio" name="matematica5" value="a">(a)</label><br>
+            <label><input type="radio" name="matematica5" value="b">(b)</label><br>
+            <label><input type="radio" name="matematica5" value="c">(c)</label><br>
+            <label><input type="radio" name="matematica5" value="d">(d)</label><br>
+        </fieldset>
+
+
+        <fieldset>
+
+            <p><strong>Português (6 questões)</strong></p>
+
+            <p>Questão1</p>
+            <label><input type="radio" name="portugues1" value="a">(a)</label><br>
+            <label><input type="radio" name="portugues1" value="b">(b)</label><br>
+            <label><input type="radio" name="portugues1" value="c">(c)</label><br>
+            <label><input type="radio" name="portugues1" value="d">(d)</label><br>
+
+            <p>Questão2</p>
+            <label><input type="radio" name="portugues2" value="a">(a)</label><br>
+            <label><input type="radio" name="portugues2" value="b">(b)</label><br>
+            <label><input type="radio" name="portugues2" value="c">(c)</label><br>
+            <label><input type="radio" name="portugues2" value="d">(d)</label><br>
+
+            <p>Questão3</p>
+            <label><input type="radio" name="portugues3" value="a">(a)</label><br>
+            <label><input type="radio" name="portugues3" value="b">(b)</label><br>
+            <label><input type="radio" name="portugues3" value="c">(c)</label><br>
+            <label><input type="radio" name="portugues3" value="d">(d)</label><br>
+
+            <p>Questão4</p>
+            <label><input type="radio" name="portugues4" value="a">(a)</label><br>
+            <label><input type="radio" name="portugues4" value="b">(b)</label><br>
+            <label><input type="radio" name="portugues4" value="c">(c)</label><br>
+            <label><input type="radio" name="portugues4" value="d">(d)</label><br>
+
+            <p>Questão5</p>
+            <label><input type="radio" name="portugues5" value="a">(a)</label><br>
+            <label><input type="radio" name="portugues5" value="b">(b)</label><br>
+            <label><input type="radio" name="portugues5" value="c">(c)</label><br>
+            <label><input type="radio" name="portugues5" value="d">(d)</label><br>
+
+            <p>Questão6</p>
+            <label><input type="radio" name="portugues6" value="a">(a)</label><br>
+            <label><input type="radio" name="portugues6" value="b">(b)</label><br>
+            <label><input type="radio" name="portugues6" value="c">(c)</label><br>
+            <label><input type="radio" name="portugues6" value="d">(d)</label><br>
+
+        </fieldset>
+
+
+
+        <fieldset>
+
+            <p><strong>Biologia (3 questões)</strong></p>
+
+            <p>Questão1</p>
+            <label><input type="checkbox" name="biologia1" value="a">(a)</label><br>
+            <label><input type="checkbox" name="biologia1" value="b">(b)</label><br>
+            <label><input type="checkbox" name="biologia1" value="c">(c)</label><br>
+            <label><input type="checkbox" name="biologia1" value="d">(d)</label><br>
+
+            <p>Questão2</p>
+            <label><input type="checkbox" name="biologia2" value="a">(a)</label><br>
+            <label><input type="checkbox" name="biologia2" value="b">(b)</label><br>
+            <label><input type="checkbox" name="biologia2" value="c">(c)</label><br>
+            <label><input type="checkbox" name="biologia2" value="d">(d)</label><br>
+
+            <p>Questão3</p>
+            <label><input type="checkbox" name="biologia3" value="a">(a)</label><br>
+            <label><input type="checkbox" name="biologia3" value="b">(b)</label><br>
+            <label><input type="checkbox" name="biologia3" value="c">(c)</label><br>
+            <label><input type="checkbox" name="biologia3" value="d">(d)</label><br>
+
+
+
+        </fieldset>
+
+        <fieldset>
+           
+            <p><strong>História (3 questões)</strong></p>
+
+            <p>Questão1</p>
+           <input type="text" name="historia1"><br><br>
+
+            <p>Questão2</p>
+           <input type="text" name="historia2"><br><br>
+
+            <p>Questão3</p>
+           <input type="text" name="historia3"><br><br>
+
+
+
+        </fieldset>
+
+
+
+
+    </form>
+</body>
+
+</html>
