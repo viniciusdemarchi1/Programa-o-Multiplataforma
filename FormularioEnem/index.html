@@ -11,7 +11,7 @@
     <h1>Formulário ENEM</h1>
 
     <form action="teste.jsp" method="post">
-       
+
         <fieldset>
             <legend>Informações Pessoais:</legend>
             <label for="nome">Nome:</label>
@@ -37,6 +37,20 @@
                 <option value="masculino">Masculino</option>
                 <option value="feminino">Feminino</option>
             </select><br><br>
+
+            <label for="escola">Escolha a Escola em que Você estuda:</label>
+            <select id="escola" name="escola" required>
+                <optgroup value="Escola Particular" label="Escola Particular">
+                    <option value="SESI">SESI</option>
+                    <option value="FUNVIC">FUNVIC</option>
+                    <option value="IPE AMARELO">IPE AMARELO</option>
+                </optgroup>
+                <optgroup value="Escola Publica" label="Escola Publica">
+                    <option value="SESI">Barão</option>
+                    <option value="FUNVIC">Barreto Coelho</option>
+                    <option value="IPE AMARELO">Eletrô</option>
+                </optgroup>
+            </select>
 
         </fieldset>
 
@@ -141,30 +155,45 @@
             <label><input type="checkbox" name="biologia3" value="b">(b)Cobra, sapo e peixe</label><br>
             <label><input type="checkbox" name="biologia3" value="c">(c)Aranha, cobra e peixe</label><br>
             <label><input type="checkbox" name="biologia3" value="d">(d)Peixe, aranha e minhoca</label><br>
+            <br>
+            <label for="questao1">Sobre a fotossíntese, é correto afirmar que:</label><br>
+            <select id="questao1" name="questao1" required>
+                <option value="questao1">Ocorre apenas durante a noite e libera gás carbônico.</option>
+                <option value="questao1">Acontece nas mitocôndrias e produz oxigênio a partir da glicose.</option>
+                <option value="questao1">Ocorre nos cloroplastos e utiliza luz solar, água e gás carbônico para produzir
+                    glicose.</option>
+                <option value="questao1">É um processo exclusivo de animais herbívoros.</option>
+            </select><br><br><br>
 
-
+            <label for="questao2">Sobre o DNA, é correto afirmar que:</label><br>
+            <select id="questao2" name="questao2" required>
+                <option value="questao2">É encontrado apenas no núcleo das células procariontes.</option>
+                <option value="questao2">É responsável por armazenar informações genéticas dos seres vivos.</option>
+                <option value="questao2">É formado por aminoácidos organizados em dupla hélice.</option>
+                <option value="questao2">Substitui o RNA na produção de proteínas</option>
+            </select><br><br>
 
         </fieldset>
 
         <fieldset>
-           
+
             <p><strong>História (3 questões)</strong></p>
 
             <p>1. A Revolução Francesa teve início em:</p>
-           <input type="text" name="historia1"><br><br>
+            <input type="text" name="historia1"><br><br>
 
             <p>2. A Independência do Brasil ocorreu em:</p>
-           <input type="text" name="historia2"><br><br>
+            <input type="text" name="historia2"><br><br>
 
             <p>3. Quem foi o primeiro presidente do Brasil?</p>
-           <input type="text" name="historia3"><br><br>
+            <input type="text" name="historia3"><br><br>
 
 
 
         </fieldset>
-<br><br>
+        <br><br>
 
-<input type="submit" value="Enviar" >
+        <input type="submit" value="Enviar">
 
     </form>
 </body>
