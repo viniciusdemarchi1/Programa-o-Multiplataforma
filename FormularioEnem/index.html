@@ -11,6 +11,7 @@
     <h1>Formulário ENEM</h1>
 
     <form action="teste.jsp" method="post">
+       
         <fieldset>
             <legend>Informações Pessoais:</legend>
             <label for="nome">Nome:</label>
@@ -23,7 +24,7 @@
             <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required><br><br>
 
             <label for="telefone">Telefone:</label>
             <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required><br><br>
@@ -44,35 +45,35 @@
             <legend>Questões</legend>
             <p><strong> Matemática (5 questões)</strong></p>
 
-            <p>Questão1</p>
-            <label><input type="radio" name="matematica1" value="a">(a)</label><br>
-            <label><input type="radio" name="matematica1" value="b">(b)</label><br>
-            <label><input type="radio" name="matematica1" value="c">(c)</label><br>
-            <label><input type="radio" name="matematica1" value="d">(d)</label><br>
+            <p>1. Quanto é 25 + 37?</p>
+            <label><input type="radio" name="matematica1" value="a">(a)52</label><br>
+            <label><input type="radio" name="matematica1" value="b">(b)62</label><br>
+            <label><input type="radio" name="matematica1" value="c">(c)72</label><br>
+            <label><input type="radio" name="matematica1" value="d">(d)57</label><br>
 
-            <p>Questão2</p>
-            <label><input type="radio" name="matematica2" value="a">(a)</label><br>
-            <label><input type="radio" name="matematica2" value="b">(b)</label><br>
-            <label><input type="radio" name="matematica2" value="c">(c)</label><br>
-            <label><input type="radio" name="matematica2" value="d">(d)</label><br>
+            <p>2. Qual é o resultado de 8 × 7?</p>
+            <label><input type="radio" name="matematica2" value="a">(a)54</label><br>
+            <label><input type="radio" name="matematica2" value="b">(b)48</label><br>
+            <label><input type="radio" name="matematica2" value="c">(c)56</label><br>
+            <label><input type="radio" name="matematica2" value="d">(d)64</label><br>
 
-            <p>Questão3</p>
-            <label><input type="radio" name="matematica3" value="a">(a)</label><br>
-            <label><input type="radio" name="matematica3" value="b">(b)</label><br>
-            <label><input type="radio" name="matematica3" value="c">(c)</label><br>
-            <label><input type="radio" name="matematica3" value="d">(d)</label><br>
+            <p>3. Quanto é 100 ÷ 4?</p>
+            <label><input type="radio" name="matematica3" value="a">(a)20</label><br>
+            <label><input type="radio" name="matematica3" value="b">(b)30</label><br>
+            <label><input type="radio" name="matematica3" value="c">(c)25</label><br>
+            <label><input type="radio" name="matematica3" value="d">(d)40</label><br>
 
-            <p>Questão4</p>
-            <label><input type="radio" name="matematica4" value="a">(a)</label><br>
-            <label><input type="radio" name="matematica4" value="b">(b)</label><br>
-            <label><input type="radio" name="matematica4" value="c">(c)</label><br>
-            <label><input type="radio" name="matematica4" value="d">(d)</label><br>
+            <p>4. Qual é a raiz quadrada de 81?</p>
+            <label><input type="radio" name="matematica4" value="a">(a)8</label><br>
+            <label><input type="radio" name="matematica4" value="b">(b)9</label><br>
+            <label><input type="radio" name="matematica4" value="c">(c)7</label><br>
+            <label><input type="radio" name="matematica4" value="d">(d)6</label><br>
 
-            <p>Questão5</p>
-            <label><input type="radio" name="matematica5" value="a">(a)</label><br>
-            <label><input type="radio" name="matematica5" value="b">(b)</label><br>
-            <label><input type="radio" name="matematica5" value="c">(c)</label><br>
-            <label><input type="radio" name="matematica5" value="d">(d)</label><br>
+            <p>8. Se um produto custa R$ 200 e tem 10% de desconto, qual será o valor final?</p>
+            <label><input type="radio" name="matematica5" value="a">(a)R$ 180</label><br>
+            <label><input type="radio" name="matematica5" value="b">(b)R$ 190</label><br>
+            <label><input type="radio" name="matematica5" value="c">(c)R$ 170</label><br>
+            <label><input type="radio" name="matematica5" value="d">(d)R$ 160</label><br>
         </fieldset>
 
 
@@ -80,41 +81,41 @@
 
             <p><strong>Português (6 questões)</strong></p>
 
-            <p>Questão1</p>
-            <label><input type="radio" name="portugues1" value="a">(a)</label><br>
-            <label><input type="radio" name="portugues1" value="b">(b)</label><br>
-            <label><input type="radio" name="portugues1" value="c">(c)</label><br>
-            <label><input type="radio" name="portugues1" value="d">(d)</label><br>
+            <p>1. Qual das palavras está escrita corretamente?</p>
+            <label><input type="radio" name="portugues1" value="a">(a)Exceção</label><br>
+            <label><input type="radio" name="portugues1" value="b">(b)Excessão</label><br>
+            <label><input type="radio" name="portugues1" value="c">(c)Eceção</label><br>
+            <label><input type="radio" name="portugues1" value="d">(d)Exessão</label><br>
 
-            <p>Questão2</p>
-            <label><input type="radio" name="portugues2" value="a">(a)</label><br>
-            <label><input type="radio" name="portugues2" value="b">(b)</label><br>
-            <label><input type="radio" name="portugues2" value="c">(c)</label><br>
-            <label><input type="radio" name="portugues2" value="d">(d)</label><br>
+            <p>2. Em qual alternativa há um substantivo?</p>
+            <label><input type="radio" name="portugues2" value="a">(a)Correr</label><br>
+            <label><input type="radio" name="portugues2" value="b">(b)Bonito</label><br>
+            <label><input type="radio" name="portugues2" value="c">(c)Casa</label><br>
+            <label><input type="radio" name="portugues2" value="d">(d)Rapidamente</label><br>
 
-            <p>Questão3</p>
-            <label><input type="radio" name="portugues3" value="a">(a)</label><br>
-            <label><input type="radio" name="portugues3" value="b">(b)</label><br>
-            <label><input type="radio" name="portugues3" value="c">(c)</label><br>
-            <label><input type="radio" name="portugues3" value="d">(d)</label><br>
+            <p>3. Qual é o plural de “cidadão”?</p>
+            <label><input type="radio" name="portugues3" value="a">(a)Cidadões</label><br>
+            <label><input type="radio" name="portugues3" value="b">(b)Cidadãos</label><br>
+            <label><input type="radio" name="portugues3" value="c">(c)Cidadães</label><br>
+            <label><input type="radio" name="portugues3" value="d">(d)Cidadans</label><br>
 
-            <p>Questão4</p>
-            <label><input type="radio" name="portugues4" value="a">(a)</label><br>
-            <label><input type="radio" name="portugues4" value="b">(b)</label><br>
-            <label><input type="radio" name="portugues4" value="c">(c)</label><br>
-            <label><input type="radio" name="portugues4" value="d">(d)</label><br>
+            <p>4. Qual das frases está correta?</p>
+            <label><input type="radio" name="portugues4" value="a">(a)Nós vai ao cinema.</label><br>
+            <label><input type="radio" name="portugues4" value="b">(b)Nós vamos ao cinema.</label><br>
+            <label><input type="radio" name="portugues4" value="c">(c)Nós vaiamos ao cinema.</label><br>
+            <label><input type="radio" name="portugues4" value="d">(d)Nós vão ao cinema.</label><br>
 
-            <p>Questão5</p>
-            <label><input type="radio" name="portugues5" value="a">(a)</label><br>
-            <label><input type="radio" name="portugues5" value="b">(b)</label><br>
-            <label><input type="radio" name="portugues5" value="c">(c)</label><br>
-            <label><input type="radio" name="portugues5" value="d">(d)</label><br>
+            <p>5. A palavra “felizmente” é classificada como:</p>
+            <label><input type="radio" name="portugues5" value="a">(a)Substantivo</label><br>
+            <label><input type="radio" name="portugues5" value="b">(b)Verbo</label><br>
+            <label><input type="radio" name="portugues5" value="c">(c)Advérbio</label><br>
+            <label><input type="radio" name="portugues5" value="d">(d)Adjetivo</label><br>
 
-            <p>Questão6</p>
-            <label><input type="radio" name="portugues6" value="a">(a)</label><br>
-            <label><input type="radio" name="portugues6" value="b">(b)</label><br>
-            <label><input type="radio" name="portugues6" value="c">(c)</label><br>
-            <label><input type="radio" name="portugues6" value="d">(d)</label><br>
+            <p>5. Em qual frase o verbo está no passado?</p>
+            <label><input type="radio" name="portugues6" value="a">(a)Eu estudarei amanhã.</label><br>
+            <label><input type="radio" name="portugues6" value="b">(b)Eu estudo todos os dias.</label><br>
+            <label><input type="radio" name="portugues6" value="c">(c)Eu estudei ontem.</label><br>
+            <label><input type="radio" name="portugues6" value="d">(d)Eu estudarei hoje.</label><br>
 
         </fieldset>
 
@@ -124,23 +125,23 @@
 
             <p><strong>Biologia (3 questões)</strong></p>
 
-            <p>Questão1</p>
-            <label><input type="checkbox" name="biologia1" value="a">(a)</label><br>
-            <label><input type="checkbox" name="biologia1" value="b">(b)</label><br>
-            <label><input type="checkbox" name="biologia1" value="c">(c)</label><br>
-            <label><input type="checkbox" name="biologia1" value="d">(d)</label><br>
+            <p>1. Qual organela é responsável pela produção de energia na célula?</p>
+            <label><input type="checkbox" name="biologia1" value="a">(a)Ribossomo</label><br>
+            <label><input type="checkbox" name="biologia1" value="b">(b)Lisossomo</label><br>
+            <label><input type="checkbox" name="biologia1" value="c">(c)Mitocôndria</label><br>
+            <label><input type="checkbox" name="biologia1" value="d">(d)Complexo de Golgi</label><br>
 
-            <p>Questão2</p>
-            <label><input type="checkbox" name="biologia2" value="a">(a)</label><br>
-            <label><input type="checkbox" name="biologia2" value="b">(b)</label><br>
-            <label><input type="checkbox" name="biologia2" value="c">(c)</label><br>
-            <label><input type="checkbox" name="biologia2" value="d">(d)</label><br>
+            <p>2. Qual é o processo pelo qual as plantas produzem seu próprio alimento?</p>
+            <label><input type="checkbox" name="biologia2" value="a">(a)Respiração celular</label><br>
+            <label><input type="checkbox" name="biologia2" value="b">(b)Fotossíntese</label><br>
+            <label><input type="checkbox" name="biologia2" value="c">(c)Fermentação</label><br>
+            <label><input type="checkbox" name="biologia2" value="d">(d)Transpiração</label><br>
 
-            <p>Questão3</p>
-            <label><input type="checkbox" name="biologia3" value="a">(a)</label><br>
-            <label><input type="checkbox" name="biologia3" value="b">(b)</label><br>
-            <label><input type="checkbox" name="biologia3" value="c">(c)</label><br>
-            <label><input type="checkbox" name="biologia3" value="d">(d)</label><br>
+            <p>3. Qual das alternativas apresenta apenas vertebrados?</p>
+            <label><input type="checkbox" name="biologia3" value="a">(a)Minhoca, peixe e sapo</label><br>
+            <label><input type="checkbox" name="biologia3" value="b">(b)Cobra, sapo e peixe</label><br>
+            <label><input type="checkbox" name="biologia3" value="c">(c)Aranha, cobra e peixe</label><br>
+            <label><input type="checkbox" name="biologia3" value="d">(d)Peixe, aranha e minhoca</label><br>
 
 
 
@@ -150,13 +151,13 @@
            
             <p><strong>História (3 questões)</strong></p>
 
-            <p>Questão1</p>
+            <p>1. A Revolução Francesa teve início em:</p>
            <input type="text" name="historia1"><br><br>
 
-            <p>Questão2</p>
+            <p>2. A Independência do Brasil ocorreu em:</p>
            <input type="text" name="historia2"><br><br>
 
-            <p>Questão3</p>
+            <p>3. Quem foi o primeiro presidente do Brasil?</p>
            <input type="text" name="historia3"><br><br>
 
 
