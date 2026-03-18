@@ -7,20 +7,21 @@
     <title>Exemplo JS - Java Script</title>
 
     <script>
-        function esconderTexto() {
-            document.getElementById('sumir').style.display = 'none';
 
-
-        }
-
-        function mostrarTexto(){
-            document.getElementById('sumir').style.display = '';
-
-        }
-
-
-        function controleDeTexto(){
-           
+        /* function esconderTexto() {
+                document.getElementById('sumir').style.display = 'none';
+    
+    
+            }
+    
+            function mostrarTexto(){
+                document.getElementById('sumir').style.display = '';
+    
+            }
+    
+    */
+        function controleDeTexto(estado) {
+document.getElementById('sumir').style.display = estado;
         }
 
 
@@ -36,9 +37,9 @@
     <h1 id="sumir">Irá SUMIR!</h1>
 
     <button onclick="document.getElementById('palavra').innerHTML = '<b>Texto Novo</b>';">OK</button>
-    <button onclick="esconderTexto('none');">Sumir</button>
-    <button onclick="mostrarTexto('');">Aparecer</button>
-    
+    <button onclick="controleDeTexto('none');">Sumir</button>
+    <button onclick="controleDeTexto('');">Aparecer</button>
+
 </body>
 
 </html>
