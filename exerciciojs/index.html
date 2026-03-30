@@ -5,18 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
 </head>
 
 <body>
-<script>
+    <script>
 
-function Executar(){
+        function Executar() {
+            let resultado = { portugues: 0, matematica: 0, historia: 0, natureza: 0 };
 
+            let perguntas = [
+                'portugues1', 'portugues2', 'portugues3',
+                'matematica1', 'matematica2',
+                'historia1', 'historia2',
+                'natureza1', 'natureza2', 'natureza3'
+            ];
+
+            let gabarito = {
+                "portugues1": "a",
+                "portugues2": "a",
+                "portugues3": "a",
+                "matematica1": "a",
+                "matematica2": "b",
+                "historia1": "b",
+                "historia2": "c",
+                "natureza1": "b",
+                "natureza2": "c",
+                "natureza3": "c"
+            };
+
+            for (let i in perguntas) {
+                let nome = perguntas[i];
+                let opcoes = document.getElementsByName(nome);
+                for (let opcao in opcoes) {
+                    if (opcoes[opcao].checked) {
+                        if (opcoes[opcao].value === gabarito[nome]) {
+                            if (nome.includes("portugues")) {
+                               resultado.portugues++;
+                            }else if (nome.includes("matematica")) {
+                                resultado.matematica++;
+                            }else if (nome.includes("historia")) {
+                                resultado.historia++;
+                            }else if (nome.includes("natureza")) {
+                                resultado.natureza++;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+
+let total = resultado.portugues + resultado.matematica + resultado.historia + resultado.natureza;
+
+
+
+document.getElementById("resultado").innerHTML ="Acertos: <br><br>" +
+        "portugues: " + resultado.portugues + "<br>" +
+        "matematica: " + resultado.matematica + "<br>" +
+        "ciencias: " + resultado.natureza + "<br>" +
+        "historia: " + resultado.historia + "<br><br>" +
+        "total: " + total;
 }
+        
 
 
-</script>
+    </script>
 
 
 
@@ -41,7 +95,7 @@ function Executar(){
 
 
                 <p>2. Qual das palavras está escrita corretamente?</p>
-                <label><input type="radio" name="portugues12" value="a">(a)Exceção</label><br>
+                <label><input type="radio" name="portugues2" value="a">(a)Exceção</label><br>
                 <label><input type="radio" name="portugues2" value="b">(b)Excessão</label><br>
                 <label><input type="radio" name="portugues2" value="c">(c)Eceção</label><br>
 
@@ -98,22 +152,22 @@ function Executar(){
                 <h2>Natureza</h2>
 
                 <p>1. Qual processo as plantas usam para produzir seu próprio alimento?</p>
-                <label><input type="radio" name="historia1" value="a">(a)Respiração</label><br>
-                <label><input type="radio" name="historia1" value="b">(b)Fotossíntese</label><br>
-                <label><input type="radio" name="historia1" value="c">(c)Digestão</label><br>
+                <label><input type="radio" name="natureza1" value="a">(a)Respiração</label><br>
+                <label><input type="radio" name="natureza1" value="b">(b)Fotossíntese</label><br>
+                <label><input type="radio" name="natureza1" value="c">(c)Digestão</label><br>
 
 
 
                 <p>2. Qual destes animais é um mamífero?</p>
-                <label><input type="radio" name="historia2" value="a">(a)Tubarão</label><br>
-                <label><input type="radio" name="historia2" value="b">(b)Águia</label><br>
-                <label><input type="radio" name="historia2" value="c">(c)Golfinho</label><br>
+                <label><input type="radio" name="natureza2" value="a">(a)Tubarão</label><br>
+                <label><input type="radio" name="natureza2" value="b">(b)Águia</label><br>
+                <label><input type="radio" name="natureza2" value="c">(c)Golfinho</label><br>
 
 
                 <p>3.Qual camada da Terra é onde vivemos?</p>
-                <label><input type="radio" name="historia2" value="a">(a)Núcleo</label><br>
-                <label><input type="radio" name="historia2" value="b">(b)Manto</label><br>
-                <label><input type="radio" name="historia2" value="c">(c)Crosta</label><br>
+                <label><input type="radio" name="natureza3" value="a">(a)Núcleo</label><br>
+                <label><input type="radio" name="natureza3" value="b">(b)Manto</label><br>
+                <label><input type="radio" name="natureza3" value="c">(c)Crosta</label><br>
 
             </fieldset>
 
@@ -125,13 +179,13 @@ function Executar(){
     <br>
 
     <div style="text-align: center;">
-        <button onclick="Executar('resultado')" style="width: 200px; height: 50px;">Executar</button>
+        <button onclick="Executar()" style="width: 200px; height: 50px;">Executar</button>
     </div>
 
 
     <p id="resultado"></p>
 
-    
+
 </body>
 
 </html>
