@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Matemática</title>
+</head>
+
+<body>
+    <table border="1" align="center">
+        <tr>
+            <th colspan="2">Bem Vindo: Escolha a sua Operação Digitando um numero das opções disponiveis</th>
+        </tr>
+
+        <tr>
+            <td>1:</td>
+            <td>Cálculo de Raiz Quadrada de um numero</td>
+        </tr>
+
+        <tr>
+            <td>2:</td>
+            <td>Exponenciação de um Numero</td>
+        </tr>
+
+        <tr>
+            <td>3:</td>
+            <td>Cálculo da função | a² + raiz(a+b)</td>
+        </tr>
+
+        <tr>
+            <td>4:</td>
+            <td>Sair do Programa</td>
+        </tr>
+
+        <tr>
+            <td><input type="number" id="codigo"></td>
+            <td>
+                <button onclick="Processar();">Processar</button>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <div style="text-align: center;">
+        <label for="n1" id="labelN1" style="display: none;">Digite o primeiro valor:</label>
+        <input type="number" id="n1" style="display: none;">
+        <br><br>
+
+        <label for="n2" id="labelN2" style="display: none;">Digite o segundo valor:</label>
+        <input type="number" id="n2" style="display: none;">
+        <br><br>
+
+        <button id="btnCalcular" onclick="Calcular();" style="display: none;">Calcular Resultado</button>
+        <h3 id="Resultado"></h3>
+    </div>
+
+    <script>
+        function Processar() {
+            let op = parseInt(document.getElementById('codigo').value);
+
+            // Limpa o resultado e esconde os campos por padrão sempre que trocar a opção
+            document.getElementById('Resultado').innerHTML = '';
+            document.getElementById("labelN1").style.display = "none";
+            document.getElementById("n1").style.display = "none";
+            document.getElementById("labelN2").style.display = "none";
+            document.getElementById("n2").style.display = "none";
+            document.getElementById("btnCalcular").style.display = "none";
+
+            switch (op) {
+                case 1:
+                    document.getElementById("labelN1").innerText = "Digite o valor para a raiz:";
+                    document.getElementById("labelN1").style.display = "inline";
+                    document.getElementById("n1").style.display = "inline";
+                    document.getElementById("btnCalcular").style.display = "inline";
+                    break;
+
+                case 2:
+                    document.getElementById("labelN1").innerText = "Digite a base:";
+                    document.getElementById("labelN2").innerText = "Digite o expoente:";
+                    document.getElementById("labelN1").style.display = "inline";
+                    document.getElementById("n1").style.display = "inline";
+                    document.getElementById("labelN2").style.display = "inline";
+                    document.getElementById("n2").style.display = "inline";
+                    document.getElementById("btnCalcular").style.display = "inline";
+                    break;
+
+                case 3:
+                    document.getElementById("labelN1").innerText = "Digite o valor de a:";
+                    document.getElementById("labelN2").innerText = "Digite o valor de b:";
+                    document.getElementById("labelN1").style.display = "inline";
+                    document.getElementById("n1").style.display = "inline";
+                    document.getElementById("labelN2").style.display = "inline";
+                    document.getElementById("n2").style.display = "inline";
+                    document.getElementById("btnCalcular").style.display = "inline";
+                    break;
+
+                case 4:
+                    alert("Saindo do programa...");
+                    document.getElementById('codigo').value = '';
+                    break;
+
+                default:
+                    alert("Código inválido! Por favor, digite um número de 1 a 4.");
+            }
+        }
+
+        // Nova função dedicada apenas a fazer as contas e exibir o resultado
+        function Calcular() {
+            let op = parseInt(document.getElementById('codigo').value);
+            // Usei parseFloat em vez de parseInt para permitir números com vírgula/decimais
+            let n1 = parseFloat(document.getElementById('n1').value);
+            let n2 = parseFloat(document.getElementById('n2').value);
+            let resultadoFinal = '';
+
+            switch (op) {
+                case 1:
+                    resultadoFinal = Math.sqrt(n1);
+                    document.getElementById('Resultado').innerHTML = "A raiz quadrada é: " + resultadoFinal;
+                    break;
+                case 2:
+                    resultadoFinal = n1 ** n2;
+                    document.getElementById('Resultado').innerHTML = "A exponenciação é: " + resultadoFinal;
+                    break;
+                case 3:
+                    resultadoFinal = (n1 ** 2) + Math.sqrt(n1 + n2);
+                    document.getElementById('Resultado').innerHTML = "O resultado da equação é: " + resultadoFinal;
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

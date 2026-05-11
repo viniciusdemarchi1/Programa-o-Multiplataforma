@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo JS - Java Script</title>
+
+    <script>
+
+        /* function esconderTexto() {
+                document.getElementById('sumir').style.display = 'none';
+    
+    
+            }
+    
+            function mostrarTexto(){
+                document.getElementById('sumir').style.display = '';
+    
+            }
+    
+    */
+        function controleDeTexto(estado) {
+document.getElementById('sumir').style.display = estado;
+        }
+
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+    <p id="palavra">Texto Inicial</p><br>
+    <h1 id="sumir">Irá SUMIR!</h1>
+
+    <button onclick="document.getElementById('palavra').innerHTML = '<b>Texto Novo</b>';">OK</button>
+    <button onclick="controleDeTexto('none');">Sumir</button>
+    <button onclick="controleDeTexto('');">Aparecer</button>
+
+</body>
+
+</html>
